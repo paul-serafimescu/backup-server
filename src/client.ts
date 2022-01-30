@@ -49,9 +49,6 @@ bot.on('guildCreate', async guild => {
 });
 
 bot.on('interactionCreate', async interaction => {
-    if (interaction.user.id !== '882055585791623198') {
-        return;
-    }
     if (interaction.isCommand()) {
         const originalGuild = interaction.guild;
         const response = { content: 'invalid command: ' };
